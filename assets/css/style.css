@@ -1414,7 +1414,7 @@ section.colored {
     text-align: center;
 }
 
-.reviews-2 .reviews-slide .item .thumb {
+.reviews-2 .reviews-slide .item .thumb, .blog-standard .thumb{
     background: transparent;
     border: solid 1px #F7F7F7;
     border-radius: 50%;

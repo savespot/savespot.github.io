@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+<html lang="en-US">
+<head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>SaveSpot</title>
+	<meta name="description" content="Save Spot - Electricity Consumption Tracking App">
+	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+	<link rel="shortcut icon" type="image/x-icon" href="assets/images/favicon.png">
+
+	<!-- STYLESHEETS -->
+	<link rel="stylesheet" href="assets/bootstrap/css/bootstrap.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/font-awesome.min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/et-line.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/magnific-popup.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/slick.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/hover-min.css" type="text/css" media="all">
+	<link rel="stylesheet" href="assets/css/style.css" type="text/css" media="all">
+
+	<!--[if lt IE 9]>
+      <script src="https://oss.maxcdn.com/html5shiv/3.7.2/html5shiv.min.js"></script>
+      <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+    <!-- Style Changer -->
+    <link type="text/css" rel="alternate stylesheet" href="assets/css/colors/color-1.css" title="color-1" />
+<!--    <link type="text/css" rel="alternate stylesheet" href="assets/css/colors/color-2.css" title="color-2" />-->
+<!--    <link type="text/css" rel="alternate stylesheet" href="assets/css/colors/color-3.css" title="color-3" />-->
+<!--    <link type="text/css" rel="alternate stylesheet" href="assets/css/colors/color-4.css" title="color-4" />-->
+<!--    <link type="text/css" rel="alternate stylesheet" href="assets/css/colors/color-5.css" title="color-5" />-->
+<!--    <link type="text/css" rel="alternate stylesheet" href="assets/css/colors/color-6.css" title="color-6" />-->
+    <link type="text/css" rel="stylesheet" href="demo/style-changer.css" />
+
+</head>
+
+<body>
+
+<!-- Preloader -->
+<div class="preloader-outer">
+	<div class="preloader" aria-busy="true" aria-label="Loading, please wait." role="progressbar"></div>
+</div>
+
+<!-- Navbar 1 -->
+<nav class="navbar navbar-default navbar-static">
+    <div class="container">
+        <div class="navbar-header">
+            <button aria-controls="navbar" aria-expanded="false" class=
+            "navbar-toggle collapsed" data-target="#navbar" data-toggle=
+            "collapse" type="button" style="margin-top: 20px;">
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span> <span class="icon-bar"></span></button>
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html"><img src="assets/images/logo-blk.png"> </a>
+<!--            <span class="slogan">More than fueling it</span>-->
+            <!-- Logo end -->
+        </div>
+        <div class="navbar-collapse collapse" id="navbar">
+
+            <div class="navbar-right" style="margin-top: 20px;">
+
+                <!-- Menu -->
+                <ul class="nav navbar-nav">
+                    <li>
+                        <a href="index.html#section-2-1">Home</a>
+                    </li>
+                    <li>
+                        <a href="index.html#section-2-2">How It Works</a>
+                    </li>
+                    <li>
+                        <a href="index.html#section-2-3">Features</a>
+                    </li>
+                    <li>
+                        <a href="index.html#section-2-5">Screenshots</a>
+                    </li>
+                    <li>
+                        <a href="index.html#section-2-6">Pricing</a>
+                    </li>
+                    <li>
+                        <a href="index.html#section-2-7">Team</a>
+                    </li>
+                    <li>
+                        <a href="index.html#section-2-8">User Personas</a>
+                    </li>
+                    <li>
+                        <a href="index.html#section-2-9">Models</a>
+                    </li>
+                </ul>
+                <!-- Menu end -->
+
+<!--                <ul class="nav navbar-nav social">-->
+<!--                    <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>-->
+<!--                    <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
+<!--                </ul>-->
+
+            </div>
+
+        </div><!--/.nav-collapse -->
+    </div>
+</nav>
+<!-- Navbar 1 end -->
+
+<section class="page-header colored">
+    <div class="container">
+        <div class="row flex">
+            <div class="col-md-7 col-sm-7 col-xs-12">
+                <h2>Machine Learning Models</h2>
+            </div>
+            <div class="col-md-5 col-sm-5 col-xs-12">
+                <div class="breadcrumbs">
+                    <ul>
+                        <li><a href="index.html">Home</a></li>
+                        <li>Machine Learning Models</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="faq">
+
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12">
+                <p style="line-height: 20px;">Our mobile application utilizes advanced regression models to calculate the month-to-date bill, taking into account various factors such as tax amendments and usage-based unit rates. Additionally, we employ LSTM machine learning models to accurately forecast future electricity bills. SME benchmarking is also available, providing users with an overview of their current usage stage compared to similar businesses.</p>
+            </div>
+            <div class="col-xs-12">
+                <h2>Electricity Bill Calculation</h2>
+                <h3>Assumptions</h3>
+                <ul>
+                    <li>The IOT device is able to capture unit consumption based on the time period.</li>
+                    <li>Day – (05.30 am - 6.30 pm)</li>
+                    <li>Peak – (6.30 pm - 10.30 pm)</li>
+                    <li>Off Peak – (10.30 pm - 05.30 am)</li>
+                    <li>When onboarding, the app should be able to capture SME type (via a drop-down list of SME categories).</li>
+                    <li>Assume that at the beginning of the month, electricity unit consumption is zero, No broad forward balance.</li>
+                    <li>Based on the total consumption, the app is able to cluster rate-wise and consumption-level-wise.
+                        <ul style="margin-left: 50px; padding-top: 10px">
+                            <li>Rate wise
+                                <ul style="margin-left: 100px; padding-top: 10px">
+                                    <li>W<sub>i1</sub> = Rate 1 – Supply at 400/230V contract demand <= 42kVA</li>
+                                    <li>W<sub>i2</sub> = Rate 2 – Supply at 400/230V contract demand > 42kVA</li>
+                                    <li>W<sub>i3</sub> = Rate 3 – Supply at 11 kV & above</li>
+                                </ul>
+                            </li>
+                            <li>Consumption Level wise
+                                <ul style="margin-left: 100px; padding-top: 10px">
+                                    <li>IP 1-1 – for <= 300 kWh/month</li>
+                                    <li>IP 1-2 – for > 300 kWh/month</li>
+                                    <li>GP 1-1 – for <= 180 kWh/month</li>
+                                    <li>GP 1-2 – for > 180 kWh/month</li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+                <h3>Calculations</h3>
+                <ul style="list-style-type: none">
+                    <li>No of Units = X</li>
+                    <li>if Consume β = 1 or if Not β = 0</li>
+                    <li><b>Agriculture Sector</b>
+                        <ul style="list-style-type: none;margin-left: 50px; padding-top: 10px">
+                            <li>Electricity Bill Value = 37 β X<sub>DAY</sub> + 40 β X<sub>PEAK</sub> + 34 β X<sub>OFF PEAK</sub> + 1600 <sub>(Fixed charge)</sub></li>
+                        </ul>
+                    </li>
+                    <li><b>Industrial Sector</b>
+                        <ul style="list-style-type: none;margin-left: 50px; padding-top: 10px">
+                            <li>Case I: Rate 1
+                                <ul style="list-style-type: none;margin-left: 50px; padding-top: 10px">
+                                    <li>Electricity Bill Value = 26 β X<sub>IP 1-1</sub> + 1200 <sub>(Fixed charge)</sub>  OR   26 β X<sub>IP 1-2</sub> + 1600 <sub>(Fixed charge)</sub></li>
+                                </ul>
+                            </li>
+                            <li>Case II: Rate 2
+                                <ul style="list-style-type: none;margin-left: 50px; padding-top: 10px">
+                                    <li>Electricity Bill Value = 37 β X<sub>DAY</sub>  + 40 β X<sub>PEAK</sub> + 34 β X<sub>OFF PEAK</sub> + 1600 <sub>(Demand charge)</sub> + 5000 <sub>(Fixed charge)</sub></li>
+                                </ul>
+                            </li>
+                            <li>Case III: Rate 13
+                                <ul style="list-style-type: none;margin-left: 50px; padding-top: 10px">
+                                    <li>Electricity Bill Value = 36.50 β X<sub>DAY</sub> + 39.50 β X<sub>PEAK</sub> + 33.50 β X<sub>OFF PEAK</sub> + 1500 <sub>(Demand charge)</sub> + 5000 <sub>(Fixed charge)</sub></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                    <li><b>Hotel / Government Sector</b>
+                        <ul style="list-style-type: none;margin-left: 50px; padding-top: 10px">
+                            <li>Case I: Rate 1
+                                <ul style="list-style-type: none;margin-left: 50px; padding-top: 10px">
+                                    <li>Electricity Bill Value = 40 β X<sub>GP 1-1</sub> + 1000 <sub>(Fixed charge)</sub>  OR   47 β X<sub>GP 1-2</sub> + 1600 <sub>(Fixed charge)</sub></li>
+                                </ul>
+                            </li>
+                            <li>Case II: Rate 2
+                                <ul style="list-style-type: none;margin-left: 50px; padding-top: 10px">
+                                    <li>Electricity Bill Value = 47 β X<sub>DAY</sub> + 55 β X<sub>PEAK</sub> + 39 β X<sub>OFF PEAK</sub> + 1600 <sub>(Demand charge)</sub> + 5000 <sub>(Fixed charge)</sub></li>
+                                </ul>
+                            </li>
+                            <li>Case III: Rate 13
+                                <ul style="list-style-type: none;margin-left: 50px; padding-top: 10px">
+                                    <li>Electricity Bill Value = 46 β X<sub>DAY</sub>  + 54 β X<sub>PEAK</sub>  + 38 β X<sub>OFF PEAK</sub> + 1500 <sub>(Demand charge)</sub> + 5000 <sub>(Fixed charge)</sub></li>
+                                </ul>
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            <div class="col-xs-12">
+                <h2>Electricity Bill Prediction</h2>
+                <h3>Use LSTM model to predict the electricity Bill</h3>
+                <p>The LSTM model is specifically designed to detect patterns in data sequences, utilizing its unique architecture to retain or discard previous information in short-term memory. This capability allows the LSTM model to identify even longer dependencies in sequences, providing better predictions in the context of multi-time series analysis by modeling relationships between multiple input time series.</p>
+                <h3>Model functionality</h3>
+                <ul style="list-style-type: none;">
+                    <li><b>Forget gate:</b> filter only the needed historical data and keep the rest without using it for prediction.eg: Tax policy change: model predict the electricity bill using the new tax policy value and disregard the old tax rates.</li>
+                    <li><b>Input gate:</b> This gate determines which new information from the current input should be stored in the memory cell</li>
+                    <li><b>Output gate:</b> This gate determines which information from the memory cell should be used to produce the output at the current time step.</li>
+                    <li><b>Cell State:</b> Holds the long-term memory. It stores the information that has been allowed into the network by the input gate and retained by the forget gate.</li>
+                    <li><b>Hidden State:</b> This state holds the short-term memory. It is the output of the LSTM cell and is calculated based on the current input and the previous hidden state.</li>
+                </ul>
+                <p>The Long Short-Term Memory (LSTM) model is a powerful technique for modeling time-series data that involves long-term dependencies. It is designed to remember relevant information from the past time steps and selectively incorporate new information at each step. This allows the model to capture complex patterns and relationships in the data, leading to more accurate predictions and better insights.
+                    <br/>
+                    Unlike other time series models such as exponential smoothing or APA, the LSTM model can incorporate new changes into the next prediction without requiring the model to be recreated. This is especially beneficial since the stationary nature of the data is often crucial for accurate prediction. Therefore, using the LSTM model can overcome these challenges and produce more accurate predictions.
+                </p>
+                <ul style="list-style-type: none;">
+                    <li><b>LSTM model - PROS</b>
+                        <ul style="margin-left: 50px; padding-top: 10px">
+                            <li>LSTM models have the ability to capture complex and non-linear relationships between variables in a multivariate time series. This is because LSTM models can selectively retain and use information from previous time steps, allowing them to capture the dependencies and relationships between different variables that may be critical for accurate prediction. </li>
+                            <li>LSTM models have shown to be effective in making accurate long-term predictions due to their ability to retain information over an extended period. This makes them ideal for forecasting tasks where long-term dependencies are crucial. In contrast to traditional models, LSTMs can capture complex and non-linear relationships between variables in a multivariate time series.</li>
+                        </ul>
+                    </li>
+                    <li><b>LSTM model - CONS</b>
+                        <ul style="margin-left: 50px; padding-top: 10px">
+                            <li>LSTM models are computationally expensive as they require a large amount of computational resources, especially when processing a large number of time steps or dealing with a large number of features. This can lead to longer training times and higher hardware requirements. </li>
+                            <li>LSTM models have a large number of parameters that need to be estimated during training, which means they require a large amount of data to achieve accurate predictions. Additionally, LSTMs are designed to capture complex and non-linear relationships between variables in a time series, which may require even more data to properly identify and model.</li>
+                        </ul>
+                    </li>
+
+
+                </ul>
+            </div>
+        </div>
+    </div>
+
+</section>
+
+<section id="download-cta-2" class="download-cta-2 colored">
+
+    <div class="container">
+        <div class="row flex">
+
+            <div class="col-md-12 col-sm-12 col-xs-12">
+                <div class="cta">
+                    <h2>Let's start with Save Spot</h2>
+                    <p>Pixa is a mobile application tailor-made to meet your needs, just as Save Spot is designed to help you track your electricity consumption.</p>
+                </div>
+            </div>
+            <div class="col-md-12 col-sm-12 col-xs-12" style="margin-top: 10px">
+                <a href="index.html#section-2-6" class="btn btn-default">Start Now</a>
+            </div>
+
+<!--            <div class="col-md-4 col-sm-12 col-xs-12">-->
+<!--                <div class="cta text-center">-->
+<!--                    <a href="#" class="btn btn-primary btn-download hvr-float-shadow">-->
+<!--                        <i class="fa fa-apple" aria-hidden="true"></i>-->
+<!--                        <span class="text">-->
+<!--							<span class="little">Download on the</span><br>App Store-->
+<!--						</span>-->
+<!--                    </a>-->
+<!--                    <a href="#" class="btn btn-primary btn-download hvr-float-shadow">-->
+<!--                        <i class="fa fa-android" aria-hidden="true"></i>-->
+<!--                        <span class="text">-->
+<!--							<span class="little">Get it on</span><br>Google Play-->
+<!--						</span>-->
+<!--                    </a>-->
+<!--                </div>-->
+<!--            </div>-->
+
+        </div>
+    </div>
+
+</section>
+
+<footer id="footer" class="footer">
+    <div class="container">
+        <img src="assets/images/logo-blk.png" class="footer-logo" alt="logo-footer" />
+        <ul class="footer-menu">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="#">Terms</a></li>
+            <li><a href="privacy.html">Privacy</a></li>
+<!--            <li><a href="#">FAQ</a></li>-->
+<!--            <li><a href="#">Contact</a></li>-->
+        </ul>
+
+		<!-- copyright text -->
+		<span class="copyright">© Copyright 2023 SaveSpot, All Rights Reserved.</span>
+
+<!--        <ul class="social-icons">-->
+<!--            <li><a href="#"><i class="fa fa-facebook" aria-hidden="true"></i></a></li>-->
+<!--            <li><a href="#"><i class="fa fa-twitter" aria-hidden="true"></i></a></li>-->
+<!--            <li><a href="#"><i class="fa fa-google-plus" aria-hidden="true"></i></a></li>-->
+<!--            <li><a href="#"><i class="fa fa-instagram" aria-hidden="true"></i></a></li>-->
+<!--            <li><a href="#"><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>-->
+<!--        </ul>-->
+    </div>
+</footer>
+
+
+<!-- SCRIPTS -->
+<script type="text/javascript" src="assets/js/jquery-1.12.3.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.easing.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.single-page.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.magnific-popup.min.js"></script>
+<script type="text/javascript" src="assets/bootstrap/js/bootstrap.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.counterup.min.js"></script>
+<script type="text/javascript" src="assets/js/jquery.ajaxchimp.js"></script>
+<script type="text/javascript" src="assets/js/waypoints.min.js"></script>
+<script type="text/javascript" src="assets/js/slick.min.js"></script>
+<script type="text/javascript" src="assets/js/scrollreveal.min.js"></script>
+<script type="text/javascript" src="assets/js/classie.js"></script>
+<script type="text/javascript" src="assets/js/custom.js"></script>
+
+</body>
+</html>
