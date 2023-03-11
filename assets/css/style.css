@@ -189,7 +189,8 @@ h2.light {
 }
 
 .overlay-colored {
-    background: rgba(45,208,198,0.8);
+    background: rgb(0,170,149);
+    background: linear-gradient(0deg, rgba(0,170,149,0.8869748583026961) 0%, rgba(3,13,17,0.8197479675463936) 90%);
     left: 0;
     height: 100%;
     top: 0;
@@ -207,15 +208,15 @@ h2.light {
 }
 
 .overlay-gradient {
-    background: rgba(45,208,198,0.8);
+    background: rgb(0,170,149);
 /* For browsers that do not support gradients */
-    background: -webkit-linear-gradient(left top,rgba(45,208,198,0.8),rgba(102,98,159,0.8));
+    background: -webkit-linear-gradient(left top,rgba(0,170,149,0.8869748583026961),rgba(3,13,17,0.8197479675463936) );
 /* For Safari 5.1 to 6.0 */
-    background: -o-linear-gradient(bottom right,rgba(45,208,198,0.8),rgba(102,98,159,0.8));
+    background: -o-linear-gradient(bottom right,rgba(0,170,149,0.8869748583026961),rgba(3,13,17,0.8197479675463936) );
 /* For Opera 11.1 to 12.0 */
-    background: -moz-linear-gradient(bottom right,rgba(45,208,198,0.8),rgba(102,98,159,0.8));
+    background: -moz-linear-gradient(bottom right,rgba(0,170,149,0.8869748583026961),rgba(3,13,17,0.8197479675463936) );
 /* For Firefox 3.6 to 15 */
-    background: linear-gradient(to bottom right,rgba(45,208,198,0.8),rgba(102,98,159,0.8));
+    background: linear-gradient(0deg, rgba(0,170,149,0.8869748583026961) 0%, rgba(3,13,17,0.8197479675463936) 90%);
 /* Standard syntax */
     left: 0;
     height: 100%;
