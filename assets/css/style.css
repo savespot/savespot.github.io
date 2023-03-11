@@ -3116,3 +3116,7 @@ h2.light p {
     letter-spacing: .1em;
     margin: 0 0 30px;
 }
+
+.faq h2 {
+    margin-bottom: 5px;
+}
