@@ -546,6 +546,18 @@ h2.light {
     max-height: 100%;
 }
 
+.navbar-fixed-top .navbar-brand img {
+    margin-top: -20px;
+}
+
+.navbar-fixed-top.shrink .navbar-brand img {
+    margin-top: -10px;
+}
+
+.navbar-fixed-top.shrink #slide-menu, .navbar-fixed-top.shrink .navicon-wrap {
+    margin-top: 20px;
+}
+
 .navbar-default .navbar-collapse {
     border-color: transparent;
 }
