@@ -45,7 +45,7 @@
                 <span class="icon-bar"></span>
                 <span class="icon-bar"></span> <span class="icon-bar"></span></button>
             <!-- Logo -->
-            <a class="navbar-brand" href="index.html"><img src="assets/images/logo-blk.png"> </a>
+            <a class="navbar-brand" href="index.html" onclick="navigateToUrl('index.html')"><img src="assets/images/logo-blk.png"> </a>
 <!--            <span class="slogan">More than fueling it</span>-->
             <!-- Logo end -->
         </div>
@@ -56,28 +56,28 @@
                 <!-- Menu -->
                 <ul class="nav navbar-nav">
                     <li>
-                        <a href="index.html#section-2-1">Home</a>
+                        <a href="index.html#section-2-1" onclick="navigateToUrl('index.html#section-2-1')">Home</a>
                     </li>
                     <li>
-                        <a href="index.html#section-2-2">How It Works</a>
+                        <a href="index.html#section-2-2" onclick="navigateToUrl('index.html#section-2-2')">How It Works</a>
                     </li>
                     <li>
-                        <a href="index.html#section-2-3">Features</a>
+                        <a href="index.html#section-2-3" onclick="navigateToUrl('index.html#section-2-3')">Features</a>
                     </li>
                     <li>
-                        <a href="index.html#section-2-5">Screenshots</a>
+                        <a href="index.html#section-2-5" onclick="navigateToUrl('index.html#section-2-5')">Screenshots</a>
                     </li>
                     <li>
-                        <a href="index.html#section-2-6">Pricing</a>
+                        <a href="index.html#section-2-6" onclick="navigateToUrl('index.html#section-2-6')">Pricing</a>
                     </li>
                     <li>
-                        <a href="index.html#section-2-7">Team</a>
+                        <a href="index.html#section-2-7" onclick="navigateToUrl('index.html#section-2-7')">Team</a>
                     </li>
                     <li>
-                        <a href="index.html#section-2-8">User Personas</a>
+                        <a href="index.html#section-2-8" onclick="navigateToUrl('index.html#section-2-8')">User Personas</a>
                     </li>
                     <li>
-                        <a href="index.html#section-2-9">Models</a>
+                        <a href="index.html#section-2-9" onclick="navigateToUrl('index.html#section-2-9')">Models</a>
                     </li>
                 </ul>
                 <!-- Menu end -->
@@ -487,6 +487,17 @@
 <script type="text/javascript" src="assets/js/scrollreveal.min.js"></script>
 <script type="text/javascript" src="assets/js/classie.js"></script>
 <script type="text/javascript" src="assets/js/custom.js"></script>
+
+<script>
+    function navigateToUrl(url) {
+        if (url.startsWith('http://') || url.startsWith('https://')) {
+            window.location.href = url;
+        } else {
+            var baseUrl = 'https://savespot.github.io';
+            window.location.href = baseUrl + '/' + url;
+        }
+    }
+</script>
 
 </body>
 </html>
